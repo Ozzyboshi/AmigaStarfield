@@ -1,18 +1,21 @@
 ### Starfield Amiga demo
-This is just a little demostration on how to recycle hardware sprites on Amiga Computers.
+This is just a little demostration on how to recycle hardware sprites on Amiga Computers. 
+
 The project takes advantage of the glorious ACE Engine by Kain at https://github.com/AmigaPorts/ACE
 
-[starfield.md](starfield.png)
+![starfield.md](starfield.png)
 
 ##### Build instructions
 
-To get the executable just clone the project and compile it with m68k-amigaos-gcc from Bebbo.
+To get the executable just clone the project and compile it with m68k-amigaos-gcc from Bebbo. 
 If you want you can use my docker image:
 
+```
 docker run -it --rm -v #where you cloned the repo#:/data -w /data ozzyboshi/acedocker:20200311 /bin/bash
 autoreconf -i
 configure --host m68k
 make
+```
 
 at this point you should have the executable built into your src directory.
 
